@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+section .box {
+  width: 600px;
+  height: 400px;
+  background-image: url(../images/photo_2_2023-11-06_14-00-45.jpg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  background-position: center;
+}
+.cartona {
+  z-index: 999999999;
+}
+.left,
+.right {
+  transition: .5s;
+  color: #acacac;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(29, 53, 63);
+  margin: 0 5px;
+}
+.close {
+  cursor: pointer;
+  color: #b3b3b3;
+  transition: .3s;
+  transform: translate(50%, 50%);
+}
+.left:hover {
+  transform: translateX(-4px);
+  color: #ffffff;
+}
+.right:hover {
+  transform: translateX(4px);
+  color: #ffffff;
+}
+.close:hover {
+  color: #9b2222;
+}
+#pictures .row div:hover img {
+  transform: translateY(-5px);
+  filter: brightness(0.5);
+}
+#pictures .row div img {
+  transition: .6s;
+}
